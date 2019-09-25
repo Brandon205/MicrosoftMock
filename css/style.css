@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0; 
+}
+
+div div {
+    width: 400px;
+    height: 250px;
+    border: 2px solid black;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+nav {
+    background: gray;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: gray;
+}
+
+.contain {
+    display: flex;
+    min-height: 250px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature {
+    display: flex; 
+    min-height: 450px;
+    justify-content: center;
+    border: 2px solid blue;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 550px) {
+    div div {
+        width: 16em;
+        height: 12em;
+    }
+
+    .contain {
+        display: flex;
+        min-height: 150px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: space-around;
+    }
+
+}
+
+@media screen and (min-width: 780px) {
+    div div {
+        margin-bottom: 0;
+        width: 10em;
+        height: 8em;
+    }
+
+    .contain {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and  (min-width: 900px) {
+    div div {
+        min-width: 12em;
+        width: 15em;
+        height: 11em;
+    }
+
+    .contain {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .feature {
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: 30px;
+    }
+}
